@@ -1,3 +1,8 @@
+import PostList from "./components/post-list";
+import SearchBar from "./components/search-bar";
+import POSTS from './data';
+
+
 export default function Home() {
   // Blog app todo:
   // Home page renders list of posts and search bar to search for posts
@@ -18,5 +23,10 @@ export default function Home() {
   // - - post date
   // - - post content
 
-  return <div>Hello World</div>
+  return (
+    <>
+      <SearchBar />
+      <PostList posts={POSTS} />
+    </>
+  )
 }
