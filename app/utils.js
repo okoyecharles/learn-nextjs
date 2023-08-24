@@ -5,10 +5,10 @@ export const getPostById = (id) => {
 };
 
 const postIndex = (id) => {
-  return POSTS.indexOf((post) => post.id === +id);
+  return POSTS.findIndex((post) => post.id === +id);
 };
 
 export const isLastPost = (id) => postIndex(id) === POSTS.length - 1;
 export const isFirstPost = (id) => postIndex(id) === 0;
 export const nextPostId = (id) => POSTS[postIndex(id) + 1].id;
-export const prevPostId = (id) => POSTS[postIndex(id) - 1];
+export const prevPostId = (id) => POSTS[postIndex(id) - 1].id;

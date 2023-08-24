@@ -6,8 +6,9 @@ export default function Post({ params }) {
 
   return (
     <section>
-      <h2>{ post?.title }</h2>
-      <p>{ post?.content }</p>
+      <h1>{ post.id }</h1>
+      <h2>{ post.title }</h2>
+      <p>{ post.content }</p>
     </section>
   )
 }
