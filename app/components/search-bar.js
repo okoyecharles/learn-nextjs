@@ -1,7 +1,7 @@
-function SearchBar() {
+function SearchBar({ value, onChangeSearchFilter }) {
   return (
     <div>
-      <input type="text" />
+      <input type="text" value={value} onChange={(e) => onChangeSearchFilter(e.target.value)} />
     </div>
   )
 }
